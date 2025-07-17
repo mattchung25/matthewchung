@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Weather Visualization Project by Matthew Chung" />
+  <title>Weather Visualization | Matthew Chung</title>
+
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1><a href="index.html" target="_self">Matthew Chung</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a class="dropdown-toggle">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="twittersentiment.html">Twitter Sentiment Analysis</a></li>
+            <li><a href="weathervisualization.html">Weather Visualization</a></li>
+            <li><a href="cyberheroes.html">Cyberheroes</a></li>
+          </ul>
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="project-hero">
+      <h1>Weather Visualization</h1>
+      <div class="project-meta">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">D3</span>
+        <span class="tech-tag">Data Visualization</span>
+      </div>
+    </section>
+
+    <section id="project-description">
+      <h2>Project Description</h2>
+      <div class="content-container">
+        <p>Created an interactive data visualization dashboard to analyze and compare Florida’s weather patterns with other U.S. regions. Key features include:</p>
+        
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Temperature Trends: Visualized historical and current max temperatures to identify warming patterns and potential climate concerns.</li>
+          <li>Regional Comparisons: Compared weather variations between Florida (East Coast) and other regions (e.g., Los Angeles on the West Coast).</li>
+          <li>Precipitation Analysis: Displayed precipitation patterns across different time ranges (monthly, quarterly, yearly) to highlight regional differences.</li>
+        </ul>
+        <p>The project utilized line and comparative visualizations to help users identify patterns, understand temperature fluctuations, and observe precipitation trends over time.</p>
+      </div>
+    </section>
+
+    <section id="project-instructions">
+      <h2>Growth</h2>
+      <div class="content-container">
+        <h3>What I Did:</h3>
+        <ul>
+            <li>Built an interactive web-based data visualization dashboard using JavaScript, D3.js, and HTML/CSS to compare Florida’s weather patterns with other U.S. regions.</li>
+            <li>Processed and structured time-series weather data for dynamic visualization and filtering.</li>
+            <li>Implemented D3 line charts and comparative plots to display:</li>
+            <ul>
+                <li>Temperature trends across U.S. regions</li>
+                <li>Record high vs. current max temperatures in Jacksonville</li>
+                <li>Precipitation patterns over monthly, quarterly, and yearly ranges</li>
+            </ul>
+            <li>Added interactive features such as dropdown menus and dynamic graph updates for user-driven data exploration.</li>
+            <li>Optimized visual layout and scales to address challenges like dense x-axis labels and overlapping line paths, ensuring readability and usability.</li>
+        </ul>
+
+        <h3>What I Learned:</h3>
+        <ul>
+          <li>Gained hands-on experience with D3.js for creating interactive, data-driven visualizations on the web.</li>
+          <li>Improved understanding of SVG rendering, scales, and axes for responsive and accurate data representation.</li>
+          <li>Learned techniques to manage and transform time-series data for visualization in JavaScript.</li>
+          <li>Developed skills in handling UI challenges, such as reducing chart clutter, improving label readability, and optimizing layout for user interaction.</li>
+          <li>Strengthened knowledge of front-end development principles by integrating HTML, CSS, and D3.js to build dynamic visual dashboards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="project-images">
+      <h2>Project Visualizations</h2>
+      <div class="images-container">
+        <div class="image-card">
+          <img src="assets/project images/weather images/temperature viz.png" alt="Temperature Trends" />
+          <div class="image-info">
+            <h3>Temperature Trends</h3>
+            <p>Interactive temperature visualization over time in chosen city (Jacksonville)</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/weather images/max temp viz.png" alt="Max Temperature Trends" />
+          <div class="image-info">
+            <h3>Max Temperature Compared to Actual Max Temperature</h3>
+            <p>This is the comparison between the max temperature and the actual max temperature in Jacksonville.</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/weather images/jax vs la precip viz.png" alt="Precipitation Trends" />
+          <div class="image-info">
+            <h3>Precipitation Trends</h3>
+            <p>Precipitation patterns in Jacksonville compared to Los Angeles over chosen time range</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="project-links">
+      <div class="content-container">
+        <a href="https://github.com/mattchung25/weathervisualization" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="project-writeup">
+      <h2>Project Write-up</h2>
+      <div class="writeup-container">
+        <iframe src="assets/write ups/weather_write_up.pdf" width="100%" height="800px" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Chung</p>
+  </footer>
+</body>
+</html> 

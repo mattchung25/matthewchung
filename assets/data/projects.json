@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Twitter Sentiment Analysis",
+      "description": "The analysis of Twitter Sentiment using different Natural Language Processing (NLP) techniques.",
+      "technologies": ["Python", "Machine Learning", "NLP"],
+      "image": "assets/img/twitter sent cover.png",
+      "link": "",
+      "github": "https://github.com/ZachG88/INFO498_Twitter_Sentiment"
+    },
+    {
+      "title": "Weather Visualization",
+      "description": "Looking at weather data through different interactive visualizations.",
+      "technologies": ["JavaScript", "D3", "Data visualization"],
+      "image": "assets/img/weather viz cover.png",
+      "link": "",
+      "github": "https://github.com/mattchung25/weathervisualization"
+    },
+    {
+        "title": "Cyberheroes",
+        "description": "Interactive website that teaches 3rd and 4th graders about cybersecurity using games and quizzes.",
+        "technologies": ["JavaScript", "CSS", "Full Stack Development"],
+        "image": "assets/img/cyberheroes.png",
+        "link": "https://virurep.github.io/cyberheroes/",
+        "github": "https://github.com/virurep/cyberheroes"
+    }
+  ]

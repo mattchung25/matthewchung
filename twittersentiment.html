@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Twitter Sentiment Analysis Project by Matthew Chung" />
+  <title>Twitter Sentiment Analysis | Matthew Chung</title>
+
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1><a href="index.html" target="_self">Matthew Chung</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a class="dropdown-toggle">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="twittersentiment.html">Twitter Sentiment Analysis</a></li>
+            <li><a href="weathervisualization.html">Weather Visualization</a></li>
+            <li><a href="cyberheroes.html">Cyberheroes</a></li>
+          </ul>
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="project-hero">
+      <h1>Twitter Sentiment Analysis</h1>
+      <div class="project-meta">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Machine Learning</span>
+        <span class="tech-tag">NLP</span>
+      </div>
+    </section>
+
+    <section id="project-description">
+      <h2>Project Description</h2>
+      <div class="content-container">
+        <p>In this NLP project, my team and I explored sentiment analysis and named entity recognition (NER) on Twitter data to understand emotional tone and entity popularity. Using datasets like Sentiment140, Twitter Airline Sentiment, and Large Twitter Tweets Sentiment, we applied multiple modeling approaches, including:</p>
+        <h3>Key Features:</h3>
+        <ul>
+          <li>Logistic Regression with TF-IDF vectors (Best performer: F1 score ~0.78)</li>
+          <li>k-Nearest Neighbors (kNN) using cosine similarity</li>
+          <li>Fine-tuned DistilBERT for efficient transformer-based classification</li>
+          <li>spaCy’s NER model to extract and analyze named entities</li>
+        </ul>
+        <p>We found that tweet sentiment generally became more positive with increased tweet length, and certain entities like “#followfriday” were highly associated with positive sentiment. Logistic regression outperformed the other models and was used to evaluate sentiment trends across entities.</p>
+      </div>
+    </section>
+
+    <section id="project-instructions">
+      <h2>Growth</h2>
+      <div class="content-container">
+        <h3>What I Did:</h3>
+        <p>I implemented a k-Nearest Neighbors (kNN) model with cosine similarity to analyze sentiment and NER on Twitter data. Due to the high-dimensional, sparse nature of the dataset, cosine similarity was chosen over Euclidean distance, and an n-value of 5 (instead of the standard 3) was used to reduce variance. However, kNN performed the worst compared to other models because of its lazy learning approach and reliance on surface-level feature similarity, which limits its ability to capture contextual meaning in text.</p>
+
+        <h3>What I Learned:</h3>
+        <ul>
+            <li>Gained experience in natural language processing (NLP) and text mining techniques</li>
+            <li>Explored and compared the performance of multiple machine learning models for sentiment analysis</li>
+            <li>Developed hands-on skills in data cleaning, data transformation, and training models on large datasets</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="project-images">
+      <h2>Project Visualizations</h2>
+      <div class="images-container">
+        <div class="image-card">
+            <img src="assets/project images/twitter images/top_10_toks.png" alt="Top 10 Tokens for Sentiments" />
+            <div class="image-info">
+              <h3>Top 10 Tokens for Positive and Negative Sentiments</h3>
+              <p>This shows the top 10 tokens for positive and negative tokens.</p>
+            </div>
+          </div>
+        <div class="image-card">
+          <img src="assets/project images/twitter images/avg_frq_ground.png" alt="Average Frequency Ground Truth" />
+          <div class="image-info">
+            <h3>Average Frequency Analysis</h3>
+            <p>Ground truth frequency distribution analysis</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/twitter images/avg_len_sent.png" alt="Average Length Sentiment" />
+          <div class="image-info">
+            <h3>Average Length by Sentiment</h3>
+            <p>Text length analysis across sentiment categories</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/twitter images/knn_cf_matrix.png" alt="KNN Confusion Matrix" />
+          <div class="image-info">
+            <h3>KNN Confusion Matrix</h3>
+            <p>K-Nearest Neighbors classification results</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/twitter images/knn_results.png" alt="KNN Results" />
+          <div class="image-info">
+            <h3>KNN Performance Results</h3>
+            <p>Detailed KNN model performance metrics</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="assets/project images/twitter images/sent_dist.png" alt="Sentiment Distribution" />
+          <div class="image-info">
+            <h3>Sentiment Distribution</h3>
+            <p>Distribution of sentiment classifications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project-links">
+      <div class="content-container">
+        <a href="https://github.com/ZachG88/INFO498_Twitter_Sentiment" target="_blank" class="project-link">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="project-writeup">
+      <h2>Project Write-up</h2>
+      <div class="writeup-container">
+        <iframe src="assets/write ups/twitter_write_up.pdf" width="100%" height="800px" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Chung</p>
+  </footer>
+</body>
+</html>

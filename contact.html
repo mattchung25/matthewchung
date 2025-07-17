@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Matthew Chung - Get in touch for opportunities and collaborations." />
+  <title>Contact | Matthew Chung</title>
+
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1><a href="index.html" target="_self">Matthew Chung</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a class="dropdown-toggle">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="twittersentiment.html">Twitter Sentiment Analysis</a></li>
+            <li><a href="weathervisualization.html">Weather Visualization</a></li>
+            <li><a href="cyberheroes.html">Cyberheroes</a></li>
+          </ul>
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-hero">
+      <h1>Get In Touch</h1>
+      <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+    </section>
+
+    <section id="contact-form">
+      <h2>Send Me a Message</h2>
+      <div class="content-container">
+        <form action="mailto:matthewchung25@gmail.com" method="post" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-info">
+      <h2>Other Ways to Connect</h2>
+      <div class="content-container">
+        <div class="contact-methods">
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:matthewchung25@gmail.com">matthewchung25@gmail.com</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fab fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/matthewchung-/" target="_blank">Connect on LinkedIn</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/mattchung25" target="_blank">View my projects</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Chung</p>
+  </footer>
+</body>
+</html> 

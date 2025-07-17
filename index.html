@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Matthew Chung – Informatics graduate focused on data science and visual storytelling." />
+  <title>Matthew Chung | Portfolio</title>
+
+  <!-- Link to your stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1><a href="index.html" target="_self">Matthew Chung</a></h1>
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#projects" class="dropdown-toggle">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="twittersentiment.html">Twitter Sentiment Analysis</a></li>
+            <li><a href="weathervisualization.html">Weather Visualization</a></li>
+            <li><a href="cyberheroes.html">Cyberheroes</a></li>
+          </ul>
+        </li>
+        <li><a href="resume.html" target="_self">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="assets/img/headshot-matthew.jpeg" alt="Matthew Chung" />
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/matthewchung-/" target="_blank" aria-label="LinkedIn">
+          <img src="assets/symbols/linkedin-square.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/mattchung25" target="_blank" aria-label="GitHub">
+          <img src="assets/symbols/github.png" alt="GitHub" />
+        </a>
+        <a href="mailto:matthewchung25@gmail.com" aria-label="Email">
+          <img src="assets/symbols/envelope.png" alt="Email" />
+        </a>
+      </div>
+      <p>Hi, I'm Matthew Chung, a recent Informatics graduate from the University of Washington, with a concentration in Data Science.</p>
+      <p>During my time at UW, I discovered the power of data to uncover hidden patterns, tell compelling stories, and drive informed decisions. Through projects involving data visualization, machine learning, and analytics, I developed a passion for using data as a tool for empowerment. I'm driven to collaborate with organizations that harness data to create meaningful impact and make knowledge more accessible to everyone.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Recent Projects</h2>
+      <div class="projects-container" id="projectsContainer">
+        <!-- Project cards will be loaded here dynamically -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="content-container">
+        <h2>Get In Touch</h2>
+        <p>Interested in collaborating or have a question? I'd love to hear from you!</p>
+        <a href="contact.html" class="contact-btn">Contact Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Chung</p>
+  </footer>
+
+  <!-- Link to your JavaScript file -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
